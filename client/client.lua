@@ -56,9 +56,7 @@ RegisterNetEvent('mk-DumpsterDepths:Client:HideInDumpster', function(source)
                                         exports['qb-core']:HideText()
                                     end
                                 end
-                            end)
 
-                            CreateThread(function()
                                 while Timer < Config.ElapsedTime and insideDumpster do
                                     Wait(1000)
                                     Timer = Timer + 1
