@@ -4,7 +4,7 @@ lua54 'yes'
 
 description 'Free, open source hide in dumpster resource'
 author 'Macky'
-version '1.0'
+version '1.0.1'
 
 client_script 'client/*.lua'
 
