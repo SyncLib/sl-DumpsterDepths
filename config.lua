@@ -13,7 +13,7 @@ Config.DumpsterProps = {
 Config.DumpsterIcon = 'fas fa-dumpster' -- Icon Target used for the Dumpster's
 Config.DumpsterLabel = 'Hide in dumpster' -- Label Target used for the Dumpster's
 
-Config.ElapsedTime = math.random(15, 30) -- Time (in seconds) when players are kicked out
+Config.ElapsedTime = math.random(5, 8) -- Time (in seconds) when players are kicked out
 
 Config.LockedValue = 3 -- If math.random is equal to 3 it will be locked
 
