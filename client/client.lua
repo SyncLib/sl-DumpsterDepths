@@ -55,12 +55,12 @@ RegisterNetEvent('mk-DumpsterDepths:Client:HideInDumpster', function(source)
                                         SetEntityVisible(Player, true, 0)
                                         exports['qb-core']:HideText()
                                     end
-                            
+
                                     while Timer < Config.ElapsedTime and insideDumpster do
                                         Wait(1000)
                                         Timer = Timer + 1
                                     end
-                            
+
                                     if Timer >= Config.ElapsedTime then
                                         Timer = 0
                                         insideDumpster = false
