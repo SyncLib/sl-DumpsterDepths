@@ -4,7 +4,7 @@ local insideDumpster = false
 local Timer = 0
 local isLocked = false
 
-RegisterNetEvent('mk-DumpsterDepths:Client:HideInDumpster', function(source)
+RegisterNetEvent('sl-DumpsterDepths:Client:HideInDumpster', function(source)
     TriggerServerEvent('InteractSound_SV:PlayOnSource', 'Stash', 0.25)
 
     isLocked = math.random(1, 3)
@@ -21,7 +21,7 @@ RegisterNetEvent('mk-DumpsterDepths:Client:HideInDumpster', function(source)
     }, {}, {}, function()
         ClearPedTasks(PlayerPedId())
 
-        QBCore.Functions.TriggerCallback('mk-DumpsterDepths:Server:HealthStatus', function(Health)
+        QBCore.Functions.TriggerCallback('sl-DumpsterDepths:Server:HealthStatus', function(Health)
             if Health then
                 local Player = PlayerPedId()
                 local Position = GetEntityCoords(Player)
@@ -90,7 +90,7 @@ exports['qb-target']:AddTargetModel(Config.DumpsterProps, {
     options = {
         {
             type = 'client',
-            event = 'mk-DumpsterDepths:Client:HideInDumpster',
+            event = 'sl-DumpsterDepths:Client:HideInDumpster',
             icon = Config.DumpsterIcon,
             label = Config.DumpsterLabel,
         },

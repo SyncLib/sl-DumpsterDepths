@@ -1,7 +1,7 @@
 -- QBCore Exports --
 local QBCore = exports['qb-core']:GetCoreObject()
 
-QBCore.Functions.CreateCallback('mk-DumpsterDepths:Server:HealthStatus', function(source, cb)
+QBCore.Functions.CreateCallback('sl-DumpsterDepths:Server:HealthStatus', function(source, cb)
     local src = source
     local Player = QBCore.Functions.GetPlayer(src)
     if Player then
